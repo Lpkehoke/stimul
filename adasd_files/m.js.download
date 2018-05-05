@@ -1,0 +1,33 @@
+(function() {
+	document.addEventListener('DOMContentLoaded', _str);
+	
+	function _str() {
+		var wrap = document.getElementsByClassName('header__main-menu-container')[0];
+		if (_chkLoc()) {
+			if (localStorage.getItem("m_c") == "1") {
+				wrap.classList.toggle('__close-menu');
+			}
+		}
+
+		document.getElementById('menuClose').onclick = function() {
+			if (_chkLoc()) {
+				if (localStorage.getItem("m_c") == "0") {
+					localStorage.setItem("m_c", 1);
+				} else {
+					localStorage.setItem("m_c", 0);
+				}
+			}
+			wrap.classList.toggle('__close-menu');
+		}
+	}
+
+	function _chkLoc () {
+		try {
+			localStorage.setItem("t", "1");
+			localStorage.removeItem("t");
+			return true;
+		} catch(e) {
+			return false;
+		}
+	}
+})()
