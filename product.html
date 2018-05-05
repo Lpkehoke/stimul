@@ -24,6 +24,7 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="http://77.222.54.187:3001/resources/img/fav/icon-16x16.png">
 
 		<link rel="stylesheet" type="text/css" href="./adasd_files/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="vendors/coolSlider/style.css">
 		<!-- <link rel="stylesheet" type="text/css" href="/vendors/admin/bootstrap/css/bootstrap.min.css"> -->
 		<link rel="stylesheet" type="text/css" href="./adasd_files/font.min.css">
 <!-- 		<link rel="stylesheet" type="text/css" href="/vendors/admin/font-awesome/css/font-awesome.min.css"> -->
@@ -213,19 +214,23 @@
 						<div class="product__galary">
 							<h1>005902 Apple iPhone 5S 16Gb gold</h1>
 							<div class="own-item-content__photos">
-								<div class="photos__colection">
-									<div>
-										<img src="resources/img/Apple_iPhone_5s_16Gb_Gold_front_display_on_miniature.jpg">
-									</div>
-									<div>
-										<img src="resources/img/Apple_iPhone_5s_16Gb_Gold_back_miniature.jpg">
-									</div>
-									<div>
-										<img src="resources/img/Apple_iPhone_5s_16Gb_Gold_sboky_miniature.jpg">
+								<div class="wrapper-colection">
+									<div id="photos__colection" class="photos__colection">
+										<div data-active="1" data-id="0">
+											<img width="100%" src="resources/img/Apple_iPhone_5s_16Gb_Gold_front_display_on.jpg">
+										</div>
+										<div data-active="0" data-id="1">
+											<img width="100%" src="resources/img/Alcatel_U5_3G_4047D_8GB 2_Sharp_blue_front.jpg">
+										</div>
+										<div data-active="0" data-id="2">
+											<img width="100%" src="resources/img/Apple_iPhone_5s_16Gb_Gold_front_display_on.jpg">
+										</div>
+										<div data-active="0" data-id="3">
+											<img width="100%" src="resources/img/Alcatel_U5_3G_4047D_8GB 2_Sharp_blue_front.jpg">
+										</div>
 									</div>
 								</div>
-								<div>
-									<img src="resources/img/Apple_iPhone_5s_16Gb_Gold_front_display_on.jpg">
+								<div class="mainPhoto-product">
 								</div>
 							</div>
 						</div>
@@ -280,7 +285,96 @@
 						</div>
 					</div>
 				</div>
-				<div>
+				<div class="product__tabs" id="tabs">
+					<div class="tab__header">
+						<div data-tab-id="0" class="tabs-header__item active">
+							Описание товара
+						</div>
+						<div data-tab-id="1" class="tabs-header__item">
+							Технические характеристики
+						</div>
+						<div data-tab-id="2" class="tabs-header__item">
+							Наличие в салонах
+						</div>
+					</div>
+					<div class="tab__container">
+						<div data-tab-id="0" class="tabs-container__content active">
+							Alcatel 4049D U3 (черный)
+						</div>
+						<div data-tab-id="1" class="tabs-container__content">
+							<div class="one-caracteristic">
+								<strong>Диагональ (дюйм): </strong>4
+							</div>
+							<div class="one-caracteristic">
+								<strong>Разрешение дисплея (пикс): </strong>800x480
+							</div>
+							<div class="one-caracteristic">
+								<strong>Диагональ (дюйм): </strong>4
+							</div>
+							<div class="one-caracteristic">
+								<strong>Диагональ (дюйм): </strong>4
+							</div>
+							<div class="one-caracteristic">
+								<strong>Диагональ (дюйм): </strong>4
+							</div>
+						</div>
+						<div data-tab-id="2" class="tabs-container__content">
+							<div class="tabs__there-are-div">
+								<div class="tabs__name-ofice">
+									<div>Офис продаж и обслуживания абонентов "Мегафон"</div>
+									<div>г. Волгоград, пр. Ленина, 54 б (ТРК ЕвропаСитиМолл, 1 этаж)</div>
+								</div>
+								<div class="tabs__num-ofice">
+									<span>в наличии: </span>1
+								</div>
+								<div class="tabs__time">
+									<div>Часы работы</div>
+									<div>09:00-21:00</div>
+								</div>
+								<div class="tabs__map">
+									<a href="#">
+										на карте
+									</a>
+								</div>
+							</div>
+							<div class="tabs__there-are-div">
+								<div class="tabs__name-ofice">
+									<div>Офис продаж и обслуживания абонентов "Мегафон"</div>
+									<div>г. Волгоград, пр. Ленина, 54 б (ТРК ЕвропаСитиМолл, 1 этаж)</div>
+								</div>
+								<div class="tabs__num-ofice">
+									<span>в наличии: </span>1
+								</div>
+								<div class="tabs__time">
+									<div>Часы работы</div>
+									<div>09:00-21:00</div>
+								</div>
+								<div class="tabs__map">
+									<a href="#">
+										на карте
+									</a>
+								</div>
+							</div>
+							<div class="tabs__there-are-div">
+								<div class="tabs__name-ofice">
+									<div>Офис продаж и обслуживания абонентов "Мегафон"</div>
+									<div>г. Волгоград, пр. Ленина, 54 б (ТРК ЕвропаСитиМолл, 1 этаж)</div>
+								</div>
+								<div class="tabs__num-ofice">
+									<span>в наличии: </span>1
+								</div>
+								<div class="tabs__time">
+									<div>Часы работы</div>
+									<div>09:00-21:00</div>
+								</div>
+								<div class="tabs__map">
+									<a href="#">
+										на карте
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="__bottom-message">
@@ -327,6 +421,89 @@
 				</div>
 			</div>
 		</div>
+	<div class="darker">
+		<div class="darker__dark"></div>
+		<div class="darker__content darker__slider">
+			<div class="darker__header">
+				<img class="closeBtn" src="resources/img/close_window.png">
+			</div>
+			<h2>Alcatel 4047D U5 3G 8GB 2 Sim Sharp blue</h2>
+			<div class="darker__content-own">
+			</div>
+		</div>
+		<div class="darker__content darker__product-set-bascet">
+			<div class="darker__header">
+				<img class="closeBtn" src="resources/img/close_window.png">
+			</div>
+			<h2>Товар успешно добавлен в корзину</h2>
+			<div class="darker__content-own">
+				<div class="popUp__red-btn">Оформить заказ</div>
+				<div class="popUp__red-btn">Продолжить покупки</div>
+			</div>
+		</div>
+		<div class="darker__content darker__auth">
+			<div class="darker__header">
+				<img class="closeBtn" src="resources/img/close_window.png">
+			</div>
+			<h2>Авторизация</h2>
+			<div class="darker__content-own">
+				<div class="darker__input-and-place-div">
+					<div class="darker__name-place">
+						Логин
+						<span class="__red-stik">*</span>
+					</div>
+					<div class="darker__name-place">
+						Пароль
+						<span class="__red-stik">*</span>
+					</div>
+				</div>
+				<div class="darker__input-and-place-div">
+					<div class="darker__input-div">
+						<input type="text" placeholder="Введите пароль">
+					</div>
+					<div class="darker__input-div">
+						<input type="text" placeholder="Ваша почта или мобильный телефон">
+					</div>
+				</div>
+			</div>
+			<div class="darker__login-or-regist">
+				<div>Войти</div>&nbsp;&nbsp;или&nbsp;&nbsp;
+				<span class="do-regist-btn">Зарегистрироваться</span>
+			</div>
+		</div>
+		<div class="darker__content darker__regist">
+			<div class="darker__header">
+				<img class="closeBtn" src="resources/img/close_window.png">
+			</div>
+			<h2>Регистрация</h2>
+			<div class="darker__content-own">
+				<div class="darker__input-and-place-div">
+					<div class="darker__name-place">
+						Логин
+						<span class="__red-stik">*</span>
+					</div>
+					<div class="darker__name-place">
+						Пароль
+						<span class="__red-stik">*</span>
+					</div>
+				</div>
+				<div class="darker__input-and-place-div">
+					<div class="darker__input-div">
+						<input type="text" placeholder="Введите пароль">
+					</div>
+					<div class="darker__input-div">
+						<input type="text" placeholder="Ваша почта или мобильный телефон">
+					</div>
+				</div>
+				<div class="darker__login-or-regist">
+					<div>Войти</div>&nbsp;&nbsp;или&nbsp;&nbsp;
+					<span class="do-regist-btn">Зарегистрироваться</span>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript" src="./adasd_files/m.js.download"></script>
+	<script type="text/javascript" src="vendors/coolSlider/slider.js"></script>
+	<script type="text/javascript" src="resources/js/script.js"></script>
 
 </body></html>
