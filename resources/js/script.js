@@ -46,7 +46,7 @@ function tabs () {
 	};
 }
 
-function sliderWithActiveItem () {
+function ActiveItem () {
 	var active = 0;
 	var collection = document.getElementsByClassName('photos__colection')[0];
 	var showingItem = document.getElementsByClassName('mainPhoto-product')[0];
@@ -80,6 +80,10 @@ function popUpSlider () {
 		e.preventDefault();
 		var darker = getPopUp('darker__slider');
 	}
+	var slider = document.getElementsByClassName('darker__slider')[0].getElementsByClassName('darker__content-own')[0];
+	var collection = document.getElementsByClassName('photos__colection')[0];
+	slider.appendChild(collection.cloneNode(true));
+	slider = Slider(slider.children[0]);
 }
 
 function popUpByer () {
@@ -105,7 +109,7 @@ function popUpRegist () {
 }
 
 tabs();
-sliderWithActiveItem();
+ActiveItem();
 popUpSlider();
 popUpByer();
 popUpAuth();

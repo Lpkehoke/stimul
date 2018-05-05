@@ -1,4 +1,4 @@
-function slider(item, config) {
+function Slider(item, config) {
 	var isserItem = isValid(item);
 	if (isserItem !== true) {
 		return isserItem;

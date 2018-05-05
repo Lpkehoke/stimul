@@ -1074,7 +1074,8 @@ img {
 	align-items: center;
 }
 
-.darker__login-or-regist div {
+.darker__login-or-regist div,
+.darker__do-regist {
 	background-color: #e20044;
     color: #fff;
     font-weight: 700;
@@ -1083,7 +1084,22 @@ img {
     border-radius: 19px;
 }
 
-.darker__login-or-regist div:hover {
+.darker__login-or-regist + div {
+	display: flex;
+	margin: 1em 0;
+	justify-content: center;
+}
+
+.darker__regist .darker__login-or-regist {
+	display: block;
+}
+
+.darker__regist {
+	max-width: 27.5em;
+}
+
+.darker__login-or-regist div:hover,
+.darker__do-regist {
 	transform: scale(1.1);
 	transition: transform 0.5s;
 }
@@ -1094,10 +1110,44 @@ img {
 	text-decoration: underline;
 }
 
-.darker__regist .darker__content-own {
-	display: flex;
-	flex-direction: column;
+.darker__login-or-regist span:hover {
+	color: #009dba;
 }
+
+.darker__slider .mainSlider .sliderItem {
+	width: auto;
+}
+
+.darker__content.darker__slider {
+	padding-bottom: 2em;
+}
+
+.darker__slider .mainSlider {
+	display: flex;
+	justify-content: center;
+}
+
+.inerSlider {
+	width: 100%;
+}
+
+.sliderPanel {
+	bottom: -5px;
+	position: relative;
+}
+
+.inerSlider .mainSlider {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.inerSlider {
+	width: 238px;
+	height: 348px;
+}
+
 /* --- end of pop Up --- */
 
 @media (min-width: 576px) {
