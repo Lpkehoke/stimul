@@ -28,6 +28,19 @@ img {
 	vertical-align: middle;
 }
 
+/** my3 **/
+.__standart-link {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+.__standart-link:hover,
+.__standart-link:focus {
+	color: #23527c;
+    text-decoration: underline;
+}
+/*** ***/
+
 .__l-wrap {
 	display: flex;
 	margin: 0 auto;
@@ -784,7 +797,8 @@ img {
 	padding: 0.5em 1em;
 }
 
-.tabs__map a {
+.tabs__map a,
+.feed__send-btn {
 	border: 1px solid #005dba;
 	padding: 2em;
 	font-weight: 700;
@@ -795,7 +809,8 @@ img {
 	background-color: #005dba;
 }
 
-.tabs__map a:hover {
+.tabs__map a:hover,
+.feed__send-btn:hover {
 	color: #005dba;
 	background: #fff;
 }
@@ -1271,8 +1286,93 @@ img {
 	margin-top: 1em;
 }
 
+
 /*** end of stock **/
 
+/*** feedback **/
+
+.feedback__content {
+	border: 1px solid #ececec;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 5em;
+}
+
+.feedback__header {
+	font-size: 22px;
+	font-weight: 700;
+	color: #333;
+	padding: 1.1em 1.8em;
+	border-bottom: 1px solid #ececec;
+}
+
+.feedback__main {
+	padding: 1.1em 1.8em;
+}
+
+.feedback-main__info {
+	color: #181818;
+	font-weight: 550;
+	font-size: 14px;
+	margin-bottom: 2.2em;
+}
+
+.feed__div-input-with-discription {
+	margin-bottom: 1em;
+	color: #333;
+}
+
+.feed__div-input-with-discription label {
+	display: flex;
+}
+
+.feed__wrapper-input {
+	width: 100%;
+}
+
+.feed__div-input-with-discription input,
+.feed__div-input-with-discription textarea,
+.feed__div-input-with-discription select {
+	width: 100%;
+	padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    outline: none;
+    resize: none;
+}
+
+.feed__div-input-with-discription input:focus,
+.feed__div-input-with-discription textarea:focus,
+.feed__div-input-with-discription select:focus {
+	border-color: #66afe9;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+.feed__discription-input {
+	width: 15%;
+	font-size: 14px;
+}
+
+.feedback__footer {
+	padding: 1.1em 1.8em;
+	padding-top: 0;
+	font-size: 14px;
+}
+
+.feed__send {
+	padding: 2em 0;
+}
+/* end of feedback **/
 
 @media (min-width: 576px) {
 	.__l-wrap {
@@ -1478,6 +1578,15 @@ img {
 	}
 
 	/** end of stock ***/
+
+
+	/* ***/
+
+	.feed__discription-input {
+		width: 30%;
+	}
+
+	/**** */
 }
 
 @media (max-width: 824px) {
@@ -1554,6 +1663,23 @@ img {
 		width: 45%;
 	}
 
+	/* ***/
+
+	.feed__discription-input {
+		width: 100%;
+	}
+
+	.feed__div-input-with-discription label {
+		flex-direction: column;
+	}
+
+	.feed__discription-input {
+		margin: 0.5em 0;
+	}
+
+
+	/**** */
+
 }
 /*** ***/
 
@@ -1615,5 +1741,9 @@ img {
 @media (max-width: 377px) {
 	.logo-container__logo-container-item-search input {
 		width: 85%;
+	}
+
+	.feedback__header {
+		font-size: 18px;
 	}
 }
