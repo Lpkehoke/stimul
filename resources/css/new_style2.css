@@ -1066,19 +1066,30 @@ img {
 	font-size: 14px;
 	padding: 0.8em 1.0em;
 	display: flex;
-	justify-content: flex-end;
 	width: 100%;
 	min-height: 40px;
 }
 
-.darker h2 {
-	font-weight: 700;
+.darker__header h2 {
+	margin: 0;
 	font-size: 14px;
+	font-weight: 700;
 	color: #333;
+}
+
+.darker__header img {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .darker__slider {
 	display: none;
+}
+
+.darker__share,
+.darker__product-set-bascet {
+	width: 320px;
 }
 
 .popUp__red-btn {
@@ -1236,6 +1247,11 @@ img {
 .darker__content {
 	max-height: 100%;
 	overflow: auto;
+}
+
+.darker__header {
+	position: relative;
+	
 }
 
 /* --- end of pop Up --- */
